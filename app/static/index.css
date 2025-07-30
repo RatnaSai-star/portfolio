@@ -194,7 +194,7 @@ nav div p{
   box-shadow: 5px 5px 9px black;
 }
 #edu-det img{
-  border: 2px solid;
+  /* border: 2px solid; */
   border-radius: 10px;
   height: 200px;
   width: 190px;
@@ -219,7 +219,7 @@ nav div p{
 }
 
 .progress-circle {
-  border: 2px solid;
+  /* border: 2px solid; */
   position: relative;
   top: -290px;
   left: -39px;
@@ -335,9 +335,10 @@ h6{
 section h1{
   /* border: 2px solid red; */
   font-size: 50px;
-  position:absolute;
-  top: 3100px;
-  left: 630px;
+  position:relative;
+  top: 1500px;
+  left: 470px;
+  width: 200px;
 }
 #pro div{
   height: 100px;
@@ -345,15 +346,17 @@ section h1{
   box-shadow: 0 0 6px rgb(0, 0, 0);
   border-radius: 20px;
   position:relative;
-  top: 1850px;
+  top: 1550px;
   left: 70px;
   width: 1000px;
   height: 300px;
 }
 #pro h1{
-  position:absolute;
+  /* border: 2px solid red; */
+  position:relative;
   top: 0px;
   left: 0px;
+  width: 100%;
   padding-left: 30px;
   font-size: 30px;
   color: #1d4ed8;
@@ -432,7 +435,7 @@ section h1{
 #contact h1{
   /* border: 2px solid; */
   position: relative;
-  top: 2000px;
+  top: 1700px;
   left: 330px;
   width: 300px;
   font-size: 45px;
@@ -440,7 +443,7 @@ section h1{
 #contact-me{
   display: flex;
   position: relative;
-  top: 2050px;
+  top: 1800px;
   /* right: -470px; */
 }
 #contact-me a{
@@ -494,7 +497,7 @@ footer{
     /* border: 2px solid red; */
     border-top: 2px solid #e6e6e8;
     position: relative;
-    top: 2100px;
+    top: 1900px;
     height: 60px;
     background-color:white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
