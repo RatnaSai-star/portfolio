@@ -62,12 +62,6 @@ nav div p{
       animation: blink 0.7s steps(1) infinite;
     }
 
-    @keyframes blink {
-      50% {
-        border-color: transparent;
-      }
-    }
-
     button {
       margin-top: 20px;
       padding: 10px 20px;
@@ -343,7 +337,7 @@ section h1{
   border-radius: 20px;
   position:relative;
   top: 3150px;
-  left: 150px;
+  left: 70px;
   width: 1000px;
   height: 300px;
 }
