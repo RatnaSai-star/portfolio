@@ -34,7 +34,6 @@ nav ol{
   gap: 40px;
   color: rgb(62, 59, 59);
   position: relative;
-  left: 530px;
   font-size: 17px;
   font-family:cursive;
 }
@@ -136,7 +135,7 @@ nav div p{
 #about{
   /* border: 2px solid springgreen; */
   position: absolute;
-  left: 560px;
+  left: 450px;
   top: 800px;
 }
 #about p{
@@ -145,7 +144,7 @@ nav div p{
 #me{
   /* border: 2px solid red; */
   position: absolute;
-  left: -520px;
+  left: -430px;
 }
 span{
   /* border: 2px solid gray; */
@@ -167,7 +166,8 @@ span{
 }
 #edu{
   position: absolute;
-  left: 450px;
+  /* border: 2px solid red; */
+  left: 360px;
   top: 1450px;
 }
 #edu h1{
@@ -175,15 +175,16 @@ span{
 }
 #edu h4{
   position: absolute;
-  left: 60px;
+  left: 160px;
   color: rgb(59, 57, 57);
   width: 600px;
 }
 #edu-det{
+  /* border: 2px solid red; */
   display: flex;
   gap: 100px;
   position: absolute;
-  right: -350px;
+  left: -250px;
   top: 150px;
 }
 #edu-det div{
@@ -276,7 +277,7 @@ h6{
   width: 900px;
   height: 670px;
   position: absolute;
-  right: -370px;
+  left: -360px;
   display: grid;
   gap: 50px;
   grid-template-columns: 250px 250px 250px;
