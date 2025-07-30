@@ -2,178 +2,335 @@
 {% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ratnasai Portfolio</title>
-  <link rel="stylesheet" href="{% static 'index.css' %}"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratna sai Portfolio</title>
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <h1><b>RATNASAI</b></h1>
-      <ul>
-        <li><a href="#main">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#edu">EDUCATION</a></li>
-        <li><a href="#skill">SKILLS</a></li>
-        <li><a href="#project">PROJECTS</a></li>
-        <li><a href="#cont1">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main Section -->
-  <section id="main">
-    <div id="text" data-aos="fade-up">
-      <h3>Hello, I’m</h3>
-      <h1>RATNASAI PEDDIREDDY</h1>
-      <h3>And I’m <span class="auto-type"></span></h3>
-      <a href="#cont1" class="btn">Contact Me</a>
-      <a href="{% static 'Resume.pdf' %}" download><button>Download Resume</button></a>
+<nav>
+  <div>
+    <p>Portfolio</p>
+  </div>
+  <span></span>
+  <div>
+    <ol>
+        <li><a href="#main1">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#edu">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Pro1">Projects</a></li>
+        <li><a href="#cont1">Contact</a></li>
+    </ol>
+  </div>
+</nav>
+<main>
+  <div id="main">
+    <h1>Hi, I'm Ratna Sai</h1>
+    <h3>I'm a <span id="typing" class="typing"></span></h3><br>
+    <a href="#cont1"><button type="submit">Contact Me</button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#Pro1"><button type="submit" id="view">View Work</button></a>
+  </div>
+  <p id="main1" data-aos="fade-left" ><img src="{% static 'images/mee.jpg' %}" alt=""></p>
+</main>
+<br><br><br>
+<div id="about">
+  <p><b>About Me</b></p><br><br><br>
+  <div style="display: flex;" id=me>
+    <div data-aos="fade-up-right"><img src="{% static 'images/1.jpg' %}" alt="" id="img"></div>
+    <span></span>
+    <div><br>
+      <p>
+        Motivated and detail-oriented aspiring Full Stack Python Developer seeking an entry-level
+opportunity to leverage skills in Python, Django, SQL, HTML, CSS, and JavaScript to
+contribute to innovative development teams while gaining valuable industry experience.
+      </p><br>
+      <p style="color: black;">👨‍💻 Peddireddy Ratna sai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💻 Full-Stack Developer</p>
+      <button type="button" id="downloadBtn">Download Resume</button>
     </div>
-    <div data-aos="fade-left">
-      <img src="{% static 'images/1.jpg' %}" alt="Ratnasai Peddireddy Portrait"/>
+  </div>
+</div>
+<!-- Education -->
+<div id="edu">
+  <h1>🎓 Education Details</h1>
+  <h4>My academic journey and achievements</h4>
+  <div id="edu-det">
+  <div class="edu-box" data-aos="zoom-in-up">
+    <h1>10th</h1>
+    <div class="img-wrapper" >
+      <img src="{% static 'images/school.png' %}" alt="10th">
+      <div class="progress-circle">
+        <svg>
+          <circle class="bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress" cx="50" cy="50" r="45"></circle>
+          <text x="50" y="50" class="percentage">87%</text>
+        </svg>
+      </div>
     </div>
-  </section>
+    <p><br>Ravindra Bharathi School,<br>Gudiwada</p>
+  </div>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>ABOUT</h2>
-    <div id="about-content" data-aos="fade-up">
+  <div class="edu-box" data-aos="zoom-in-up">
+    <h1>Diploma</h1>
+    <div class="img-wrapper">
+      <img src="{% static 'images/college.png' %}" alt="Diploma">
+      <div class="progress-circle">
+        <svg>
+          <circle class="bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress" cx="50" cy="50" r="45"></circle>
+          <text x="50" y="50" class="percentage">71%</text>
+        </svg>
+      </div>
+    </div>
+    <p><br>Sri Vasavi Institute of <br>Engineering & Technology,<br>Nandamuru</p>
+  </div>
+
+  <div class="edu-box" data-aos="zoom-in-up">
+    <h1>B.Tech</h1>
+    <div class="img-wrapper">
+      <img src="{% static 'images/college.png' %}" alt="B.Tech">
+      <div class="progress-circle">
+        <svg>
+          <circle class="bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress" cx="50" cy="50" r="45"></circle>
+          <text x="50" y="50" class="percentage">70%</text>
+        </svg>
+      </div>
+    </div>
+    <p><br>Sri Vasavi Institute of <br>Engineering & Technology,<br>Nandamuru</p>
+  </div>
+</div>
+</div>
+<!-- skills -->
+<div id="skills">
+  <h1>Skills</h1><br><br>
+  <div id="skill-set">
+    <div data-aos="zoom-out-right">
+      <h1>Programming Languages</h1>
+      <h3>Python</h3><br>
+      <p>OOPs, Operators, File I/O, Exception Handling, Datatypes</p>
+      <img src="{% static 'images/python.png' %}" alt="" id="img1" >
+    </div>
+    <div data-aos="zoom-in-down">
+      <h1>Web Technologies</h1>
+      <h3>HTML, CSS, JavaScript</h3>
+      <img src="{% static 'images/html,css,js.png' %}" alt="" id="img2">
+    </div>
+    <div data-aos="zoom-out-left">
+      <h1>Framework</h1>
+      <h3>Django</h3><br>
+      <p>Django Models & ORM,Views and URL Routing,Templates,Forms & User Authentication,Admin Panel Customization &Database Migrations</p>
+      <img src="{% static 'images/django.png' %}" alt="" id="img3">
+    </div>
+    <div data-aos="zoom-out-right">
+      <h1>DataBase</h1>
+      <h3>SQL</h3><br>
+      <p>OOPs, Operators, File I/O, Exception Handling, Datatypes</p>
+    </div>
+    <div data-aos="zoom-in-down">
+      <h1>Tools</h1>
+      <h3>Oracle SQL Plus, MySQL Workbench, VS Code, Jupyter Notebook</h3><br>
+    </div>
+    <div data-aos="zoom-out-left">
+      <h6>Up comming.....</h6>
+    </div>
+  </div>
+</div>
+<!-- Project -->
+<section>
+  <h1 id="Pro1">Projects</h1><br>
+  <div id="pro">
+    <div id='pop'>
+      <h1><br>Console-Based Shopping Cart Application (Skills:Python)</h1>
+      <p>- Created a shopping cart with add/remove/view functionality. <br>
+        - Handled user input and controlled real-time item management. <br>
+        - Implemented input validation and exception handling.</p>
+      <h6>Skill-stack :- Python</h6>
+    </div><br><br><br><br>
+    <div id='pop1'>
+      <h1><br>Cloning of several webpages like Ola Cabs,Vsplash,Zomato etc.. Webpage (Skill:HTML, CSS)</h1> 
+      <p>- Designed a static clone of the Ola Cabs homepage from scratch.</p>
+      <h6>Skill-stack :- HTML,CSS</h6>
+    </div><br><br><br><br>
+    <div id='pop2'>
+      <h1><br>A Simple Banking System Using SQLite in Python(Skills:Python,Sqlite3,SQL(CRUD operations))</h1>
+      <p>- The project simulates real-world banking operations such as account creation, PIN generation,balance enquiry, withdrawal, deposit, and account-to-account transfers. <br>
+- It uses SQLite to store and manage account data including customer details, balance, PINs. <br>
+- A PIN-based validation is implemented before any transaction, adding a layer of security to
+protect customer data and prevent unauthorized access.
+</p>
+      <h6>Skill-stack :- Python,Sqlite3,SQL
+(CRUD operations)</h6>
+    </div><br><br><br><br>
+    <div id='pop3'>
+      <h1><br>Django Bank Application (BOB) (Skills:Python,Django,Html,CSS,JavaScript,Bootstrap,Postgresql)</h1>
+      <p>- Developed a Django-based bank application managing user accounts and core
+banking operations. <br>
+- Implemented features for account creation, PIN generation, balance inquiry, withdrawals,
+deposits, and inter-account transfers. <br>
+- Integrated email functionality for transactional notifications and OTP verification
+for sensitive operations (e.g., PIN generation, transfers, account deletion).</p> <br>
+      <h6>Skill-stack :- :Python,Django,Html,CSS,JavaScript,Bootstrap
+,Postgresql</h6>
+    </div><br><br><br><br>
+    <div id='pop4'>
+      <h1><br>A Dynamic News in a Click webpage(Skills:Python,Django,Sqlite3,HTML5,CSS3)</h1>
+      <p>- News content is stored in a Sqlite3 database and dynamically fetched and displayed on the
+webpage, ensuring updates are reflected in real time without modifying the front end. <br>
+- Admins or authors can add, update, or delete articles through a backend interface or CMS,
+and the latest news instantly appears on the live site.</p>
+      <h6>Skill-stack :- Python,Django,Sqlite3,HTML5,CSS3</h6>
+    </div><br><br><br><br>
+    <div id='pop5'>
+      <h1><br>Automatic Solar Grass Cutting Machine</h1>
+      <p>- Built a solar-powered robotic grass cutter. <br>
+- Utilized renewable energy and automation for efficient lawn maintenance.</p>
+    </div>
+</div>
+</section>
+<!-- contact -->
+<div id="contact">
+  <h1 id="cont1">Contact Me</h1>
+  <div id="contact-me">
+    <section>
       <div>
-        <img src="{% static 'images/2.jpg' %}" alt="About Image"/>
+        <a href="mailto:ratnasaipeddireddy15@gmail.com" target="_blank">
+          <img src="{% static 'images/email.png' %}" alt="Email icon">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;ratnasaipeddireddy15@gmail.com</p>
+        </a>
       </div>
+      
       <div>
-        <p>I'm <b>Ratnasai Peddireddy</b> pursuing B.Tech in Computer Science and Engineering at Malineni Perumallu Educational Society's Group of Institutions. I’m a passionate Full Stack Developer with strong problem-solving skills. I enjoy building web applications using Python, Django, HTML, CSS, JS, SQL, and more.</p>
+        <a href="tel:+917671902914" target="_blank">
+          <img src="{% static 'images/call.png' %}" alt="Call icon">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;+91 76719 02914</p>
+        </a>
       </div>
-    </div>
-  </section>
+      
+      <div>
+        <a href="https://www.linkedin.com/in/ratna-sai" target="_blank">
+          <img src="{% static 'images/link.png' %}" alt="LinkedIn icon">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn Profile</p>
+        </a>
+      </div>
+      
+      <div>
+        <a href="https://wa.me/917671902914" target="_blank">
+          <img src="{% static 'images/what.png' %}" alt="WhatsApp icon">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;WhatsApp</p>
+        </a>
+      </div>
+      
+      <div>
+        <a href="https://github.com/RatnaSai-star" target="_blank">
+          <img src="{% static 'images/git.png' %}" alt="GitHub icon">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</p>
+        </a>
+      </div>
+    </section>
 
-  <!-- Education Section -->
-  <section id="edu">
-    <h2>EDUCATION</h2>
-    <div class="education-grid">
-      <div class="edu-item" data-aos="fade-right">
-        <div class="circle" data-percent="80">
-          <svg><circle cx="60" cy="60" r="50"></circle></svg>
-          <div class="number"><h2>80%</h2></div>
-        </div>
-        <p>B.Tech - CSE<br>Malineni Group of Institutions</p>
-      </div>
-      <div class="edu-item" data-aos="fade-up">
-        <div class="circle" data-percent="88">
-          <svg><circle cx="60" cy="60" r="50"></circle></svg>
-          <div class="number"><h2>88%</h2></div>
-        </div>
-        <p>Intermediate - MPC<br>Narayana Junior College</p>
-      </div>
-      <div class="edu-item" data-aos="fade-left">
-        <div class="circle" data-percent="97">
-          <svg><circle cx="60" cy="60" r="50"></circle></svg>
-          <div class="number"><h2>97%</h2></div>
-        </div>
-        <p>SSC<br>Vignan High School</p>
-      </div>
-    </div>
-  </section>
+    <aside>
+      <form action="{% url 'contact' %}" method="post"> <br><br>
+        {% csrf_token %}
+        <label>
+            Name:<br>
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+        </label>
 
-  <!-- Skills Section -->
-  <section id="skill">
-    <h2>SKILLS</h2>
-    <div class="skills-container" data-aos="zoom-in">
-      <div><img src="{% static 'images/python.png' %}" alt="Python" /></div>
-      <div><img src="{% static 'images/html.png' %}" alt="HTML" /></div>
-      <div><img src="{% static 'images/css.png' %}" alt="CSS" /></div>
-      <div><img src="{% static 'images/js.png' %}" alt="JavaScript" /></div>
-      <div><img src="{% static 'images/sql.png' %}" alt="SQL" /></div>
-      <div><img src="{% static 'images/django.png' %}" alt="Django" /></div>
-    </div>
-  </section>
+        <label>
+            Email:<br>
+            <input type="email" name="email" placeholder="Your Email" required><br><br>
+        </label>
 
-  <!-- Projects Section -->
-  <section id="project">
-    <h2>PROJECTS</h2>
-    <div class="projects-grid" data-aos="fade-up">
-      <div class="project-card">
-        <h4>Personal Portfolio</h4>
-        <p>Developed a responsive personal portfolio using HTML, CSS, JavaScript, and Django. It features responsive design, animations, form submission, and dynamic typing effects.</p>
-      </div>
-      <div class="project-card">
-        <h4>Online Banking System</h4>
-        <p>Console-based banking system using Python and SQLite that supports customer creation, account management, transaction tracking, and more.</p>
-      </div>
-      <div class="project-card">
-        <h4>Shopping Cart App</h4>
-        <p>Python-based console app that allows users to create accounts, browse items, add to cart, checkout, and handle payments with SQLite database integration.</p>
-      </div>
-      <div class="project-card">
-        <h4>Upcoming Project</h4>
-        <p>Upcoming...</p>
-      </div>
-    </div>
-  </section>
+        <label>
+            Message:<br>
+            <textarea name="message" placeholder="Message...." required></textarea><br><br>
+        </label>
 
-  <!-- Contact Section -->
-  <section id="cont1">
-    <h2>CONTACT</h2>
-    <div id="contact-container" data-aos="fade-up">
-      <div id="contact-form">
-        <form action="" method="post">
-          {% csrf_token %}
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" required placeholder="Enter your name"/>
-          
-          <label for="mail">Email:</label>
-          <input type="email" name="mail" id="mail" required placeholder="example@gmail.com"/>
-          
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" rows="4" placeholder="Write your message here..."></textarea>
-          
-          <button type="submit">SEND</button>
+        <button type="submit">Send Message 🚀</button>
         </form>
-      </div>
+    </aside>
+  </div>
+</div>
+<footer><br>
+    <a href="mailto:ratnasaipeddireddy15@gmail.com" target="_blank">Email</a>
+    <a href="https://www.linkedin.com/in/ratna-sai" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; linkedin</a>
+    <a href="https://github.com/RatnaSai-star" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; github</a>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const roles = [
+      "Full-stack Developer",
+      "Front-End Developer",
+      "Back-End Developer"
+    ];
 
-      <div id="contact-details">
-        <div><img src="{% static 'images/person.png' %}" alt="Name icon"/> Ratnasai Peddireddy</div>
-        <div><img src="{% static 'images/email.png' %}" alt="Email icon"/> ratnasai8639@gmail.com</div>
-        <div><img src="{% static 'images/phone.png' %}" alt="Phone icon"/> +91 6309528639</div>
-        <div>
-          <a href="https://github.com/RatnaSai-star" target="_blank">
-            <img src="{% static 'images/git.png' %}" alt="GitHub icon"/> GitHub
-          </a>
-        </div>
-        <div>
-          <a href="https://linkedin.com/in/ratna-sai" target="_blank">
-            <img src="{% static 'images/link.png' %}" alt="LinkedIn icon"/> LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    const typingElement = document.getElementById("typing");
 
-  <!-- Footer -->
-  <footer>
-    <p>© Ratnasai Peddireddy</p>
-  </footer>
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    new Typed(".auto-type", {
-      strings: ["A Full Stack Developer", "A Python Developer", "An Open Source Contributor"],
-      typeSpeed: 60,
-      backSpeed: 50,
-      loop: true
+    function typeRole() {
+      const currentRole = roles[roleIndex];
+      const displayedText = currentRole.substring(0, charIndex);
+
+      typingElement.textContent = displayedText;
+
+      if (!isDeleting) {
+        if (charIndex < currentRole.length) {
+          charIndex++;
+          setTimeout(typeRole, 100); // Typing speed
+        } else {
+          isDeleting = true;
+          setTimeout(typeRole, 1000); // Wait before deleting
+        }
+      } else {
+        if (charIndex > 0) {
+          charIndex--;
+          setTimeout(typeRole, 50); // Deleting speed
+        } else {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+          setTimeout(typeRole, 500); // Delay before typing next
+        }
+      }
+    }
+
+    typeRole(); // Start animation
+    
+  // Resume download logic
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "{% static 'resume.pdf' %}"; // ✅ Path to your resume
+    link.download = "RatnaSai_Resume.pdf"; // ✅ Name of downloaded file
+    link.click();
+  });
+  document.querySelectorAll('.img-wrapper').forEach(wrapper => {
+    wrapper.addEventListener('mouseenter', () => {
+      const circle = wrapper.querySelector('.progress');
+      const percent = wrapper.querySelector('.percentage').textContent;
+      const value = parseInt(percent); // e.g., 87
+
+      const radius = 45;
+      const circumference = 2 * Math.PI * radius;
+      const offset = circumference - (value / 100) * circumference;
+
+      circle.style.strokeDashoffset = circumference;
+      setTimeout(() => {
+        circle.style.transition = 'stroke-dashoffset 1s ease';
+        circle.style.strokeDashoffset = offset;
+      }, 50);
     });
-  </script>
 
+    wrapper.addEventListener('mouseleave', () => {
+      const circle = wrapper.querySelector('.progress');
+      circle.style.transition = 'none';
+      circle.style.strokeDashoffset = 283; // reset
+    });
+  });
+  AOS.init();
+</script>
 </body>
 </html>
