@@ -101,18 +101,21 @@ nav div p{
       color: white;
     }
     main{
+      /* border: 2px solid #07f476; */
       display: flex;
-      position: absolute;
-      left: 200px;
+      position: relative;
+      left: 250px;
       top: 250px;
+      width: 1000px;
+      height: 400px;
     }
     main p{
       border-radius: 40%;
       height: 410px;
       width: 320px;
-      position: absolute;
-      left: 515px;
-      top: -140px;
+      position: relative;
+      left: -100px;
+      top: -150px;
     }
     main img{
       height: 396px;
@@ -128,21 +131,20 @@ nav div p{
     }
 #about{
   /* border: 2px solid springgreen; */
-  position: absolute;
-  left: 450px;
-  top: 800px;
+  position: relative;
+  left: -80px;
+  top: 300px;
+  width: 400px;
+  height: 100px;
 }
 #about p{
   font-size: 40px;
 }
 #me{
   /* border: 2px solid red; */
-  position: absolute;
-  left: -430px;
-}
-span{
-  /* border: 2px solid gray; */
-  width: 20px;
+  position: relative;
+  left: -380px;
+  width: 300px;
 }
 #me p{
   width: 600px;
@@ -151,6 +153,8 @@ span{
   color: rgb(89, 85, 85);
 }
 #img{
+  position: relative;
+  left: -30px;
   border-radius: 20px;
 }
 #img:hover{
@@ -159,10 +163,10 @@ span{
   cursor: pointer;
 }
 #edu{
-  position: absolute;
+  position: relative;
   /* border: 2px solid red; */
-  left: 360px;
-  top: 1450px;
+  top: 450px;
+  width: 600px;
 }
 #edu h1{
   font-size: 40px;
@@ -177,9 +181,9 @@ span{
   /* border: 2px solid red; */
   display: flex;
   gap: 100px;
-  position: absolute;
-  left: -250px;
-  top: 150px;
+  position: relative;
+  left: -330px;
+  top: 100px;
 }
 #edu-det div{
   /* border: 2px solid; */
@@ -190,7 +194,7 @@ span{
   box-shadow: 5px 5px 9px black;
 }
 #edu-det img{
-  /* border: 2px so lid; */
+  border: 2px solid;
   border-radius: 10px;
   height: 200px;
   width: 190px;
@@ -202,11 +206,11 @@ span{
   font-size: 30px;
 }
 #edu-det p{
+  /* border: 2px solid red; */
   font-size: 20px;
-  width: 300px;
-  position: absolute;
-  top: 290px;
-  /* border: 2px solid; */
+  /* width: 300px; */
+  position: relative;
+  top: 7px;
 }
 .img-wrapper {
   position: relative;
@@ -215,13 +219,15 @@ span{
 }
 
 .progress-circle {
-  position: absolute;
-  top: -65px;
-  left: -21px;
+  border: 2px solid;
+  position: relative;
+  top: -290px;
+  left: -39px;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
+  /* width: 100px; */
 }
 
 .img-wrapper:hover img {
@@ -256,9 +262,12 @@ svg {
 }
 
 #skills{
-  position: absolute;
-  left: 550px;
-  top: 2200px;
+  /* border: 2px solid rebeccapurple; */
+  position: relative;
+  left: -10px;
+  top: 700px;
+  width: 300px;
+  height: 100px;
 }
 h6{
   text-align: center;
@@ -268,10 +277,10 @@ h6{
 #skill-set{
   padding: 0px 50px;
   /* border: 2px solid red; */
-  width: 900px;
-  height: 670px;
-  position: absolute;
-  left: -360px;
+  width: 1000px;
+  height: 700px;
+  position: relative;
+  left: -450px;
   display: grid;
   gap: 50px;
   grid-template-columns: 250px 250px 250px;
@@ -328,15 +337,15 @@ section h1{
   font-size: 50px;
   position:absolute;
   top: 3100px;
-  left: 530px;
+  left: 630px;
 }
 #pro div{
   height: 100px;
-  border: 2px solid;
+  border: 2px solid ;
   box-shadow: 0 0 6px rgb(0, 0, 0);
   border-radius: 20px;
   position:relative;
-  top: 3150px;
+  top: 1850px;
   left: 70px;
   width: 1000px;
   height: 300px;
@@ -423,22 +432,22 @@ section h1{
 #contact h1{
   /* border: 2px solid; */
   position: relative;
-  top: 3300px;
-  right: -470px;
+  top: 2000px;
+  left: 330px;
   width: 300px;
   font-size: 45px;
 }
 #contact-me{
   display: flex;
   position: relative;
-  top: 3350px;
+  top: 2050px;
   /* right: -470px; */
 }
 #contact-me a{
   text-decoration: none;
   color: black;
   display: flex;
-  width: 400px;
+  width: 430px;
 }
 #contact-me p{
   /* border: 2px solid ; */
@@ -457,23 +466,23 @@ section img{
     padding-top: 18px;
 }
 aside{
-  border: 2px solid;
+  border: 2px solid ;
   border-radius: 15px;
   background: white;
-  width: 450px;
+  width: 550px;
   padding-left: 25px;
 }
 aside input{
   text-indent: 20px;
   height: 40px;
-  width: 370px;
+  width: 330px;
   border-radius: 15px;
   background-color: #e6e6e8;
 }
 aside textarea{
   text-indent: 20px;
   height: 80px;
-  width: 370px;
+  width: 330px;
   border-radius: 15px;
   background-color: #e6e6e8;
 }
@@ -485,7 +494,7 @@ footer{
     /* border: 2px solid red; */
     border-top: 2px solid #e6e6e8;
     position: relative;
-    bottom: -3500px;
+    top: 2100px;
     height: 60px;
     background-color:white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -509,6 +518,11 @@ footer a{
     height: auto;
     padding: 10px 0;
   }
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
   nav ol {
     justify-content: center;
@@ -588,6 +602,12 @@ footer a{
     font-size: 1rem;
     padding: 10px 18px;
   }
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 }
 
 /* 🖥 LAPTOPS & PCs: 1025px and above */
@@ -639,4 +659,10 @@ footer a{
     font-size: 1.1rem;
     padding: 12px 20px;
   }
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 }
