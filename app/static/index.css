@@ -132,19 +132,6 @@ button:hover,
   font-size: 35px;
 }
 
-#me {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#me p {
-  max-width: 90%;
-  font-size: 20px;
-  color: rgb(89, 85, 85);
-}
-
 /* EDUCATION */
 #edu {
   margin-top: 100px;
@@ -262,17 +249,6 @@ footer {
   background-color: white;
   text-align: center;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-footer a {
-  padding: 0 20px;
-  text-decoration: none;
-  color: black;
-}
-
-footer img {
-  height: 40px;
-  width: 40px;
 }
 
 /* RESPONSIVE BREAKPOINTS */
@@ -397,7 +373,6 @@ nav ol{
   gap: 40px;
   color: rgb(62, 59, 59);
   position: relative;
-  left: 530px;
   font-size: 17px;
   font-family:cursive;
 }
@@ -407,7 +382,6 @@ nav div p{
   font-size: 35px;
   font-family:cursive;
   position: relative;
-  left: 50px;
 }
     h1 {
       font-size: 4rem;
@@ -474,14 +448,14 @@ nav div p{
       display: flex;
       position: absolute;
       left: 200px;
-      top: 250px;
+      top: 150px;
     }
     main p{
       border-radius: 40%;
       height: 410px;
       width: 320px;
       position: absolute;
-      left: 515px;
+      left: 565px;
       top: -140px;
     }
     main img{
@@ -501,14 +475,18 @@ nav div p{
   position: absolute;
   left: 560px;
   top: 800px;
+  display: flex;
 }
 #about p{
   font-size: 40px;
 }
 #me{
-  /* border: 2px solid red; */
+  /* display: flex; */
+  border: 2px solid red;
   position: absolute;
   left: -520px;
+  top: 100px;
+  width: 1220px;
 }
 span{
   /* border: 2px solid gray; */
@@ -538,15 +516,17 @@ span{
 }
 #edu h4{
   position: absolute;
-  left: 60px;
+  left: -100px;
   color: rgb(59, 57, 57);
   width: 600px;
 }
 #edu-det{
+  /* border: 2px solid red; */
   display: flex;
   gap: 100px;
   position: absolute;
-  right: -350px;
+  left: -400px;
+  width: 1200px;
   top: 150px;
 }
 #edu-det div{
@@ -574,6 +554,7 @@ span{
   width: 300px;
   position: absolute;
   top: 290px;
+  left: 0px;
   /* border: 2px solid; */
 }
 .img-wrapper {
@@ -859,13 +840,8 @@ footer{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 footer a{
+  /* display: flex; */
   padding:0px 150px;
   text-decoration: none;
   color: black;
-}
-footer img{
-  height: 50px;
-  width: 40px;
-  position: absolute;
-  top: 5px;
 }
