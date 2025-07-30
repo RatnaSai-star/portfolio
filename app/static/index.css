@@ -500,15 +500,15 @@ footer a{
   text-decoration: none;
   color: black;
 }
-/* Keyframes */
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+/* 🌐 Universal container for consistent padding and centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Tablet & Medium Screen (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
+/* 📱 MOBILE: Up to 480px */
+@media screen and (max-width: 480px) {
   nav {
     flex-direction: column;
     height: auto;
@@ -517,70 +517,53 @@ footer a{
 
   nav ol {
     justify-content: center;
-    position: static;
-    gap: 25px;
+    padding-bottom: 10px;
   }
 
-  nav div p {
-    left: 0;
-    text-align: center;
-  }
-
-  main {
+  #contact-me {
     flex-direction: column;
-    align-items: center;
-    left: 0;
-    top: 200px;
+    padding: 10px;
   }
 
-  main p {
-    position: static;
-    margin-top: 20px;
-  }
-
-  main img {
-    position: static;
-    margin: 0 auto;
-  }
-
-  #about {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 800px;
-    text-align: center;
-  }
-
-  #me {
-    left: 0;
-    margin-top: 20px;
-  }
-
-  #edu {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1350px;
-    text-align: center;
-  }
-
-  #edu-det {
-    flex-direction: column;
-    align-items: center;
-    position: static;
-    margin-top: 200px;
-  }
-
-  #skills {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2200px;
-    text-align: center;
+  aside {
+    width: 90%;
   }
 
   #skill-set {
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    position: static;
-    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  #pro p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  button,
+  #view {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  body {
+    padding: 0 12px;
+  }
+}
+
+/* 💻 TABLET: 481px – 1024px */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: auto;
   }
 
   #contact-me {
@@ -588,22 +571,9 @@ footer a{
     align-items: center;
   }
 
-  #contact-me section,
-  aside {
-    width: 90%;
-    padding: 0;
-  }
-
-  footer a {
-    padding: 0 40px;
-  }
-}
-
-/* Mobile Screen (max-width: 768px) */
-@media screen and (max-width: 768px) {
-  nav ol {
-    flex-wrap: wrap;
-    gap: 15px;
+  #skill-set {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   h1 {
@@ -614,95 +584,65 @@ footer a{
     font-size: 1.5rem;
   }
 
-  #skill-set {
-    grid-template-columns: 1fr;
-  }
-
-  #pro div {
-    width: 95%;
-    left: 0;
-  }
-
-  #contact h1 {
-    top: 3200px;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-
-  #contact-me {
-    top: 3250px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #contact-me section {
-    width: 100%;
-  }
-
-  aside {
-    width: 100%;
-  }
-
-  aside input,
-  aside textarea {
-    width: 90%;
-  }
-}
-
-/* Small Mobile (max-width: 480px) */
-@media screen and (max-width: 480px) {
-  body {
-    padding: 0 10px;
-  }
-
-  nav div p {
-    font-size: 24px;
-  }
-
-  #main {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  main {
-    position: static;
-    flex-direction: column;
-    align-items: center;
-  }
-
   main img {
-    width: 100%;
-    height: auto;
-  }
-
-  #skill-set {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  #pro div {
-    height: auto;
-    padding-bottom: 30px;
-  }
-
-  #contact h1 {
-    font-size: 30px;
+    width: 90%;
   }
 
   button,
   #view {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-
-  footer {
-    padding: 10px;
-  }
-
-  footer a {
-    padding: 0 20px;
-    font-size: 14px;
+    font-size: 1rem;
+    padding: 10px 18px;
   }
 }
+
+/* 🖥️ LAPTOPS & PCs: 1025px and above */
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+
+  main,
+  #about,
+  #edu,
+  #skills,
+  #projects,
+  #contact {
+    padding: 40px 100px;
+  }
+
+  #skill-set {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  main img {
+    max-width: 450px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  #contact-me {
+    padding: 20px 60px;
+  }
+
+  button,
+  #view {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+}
+
