@@ -132,22 +132,22 @@ nav div p{
 #about{
   /* border: 2px solid springgreen; */
   position: relative;
-  left: -80px;
+  left: -50px;
   top: 300px;
   width: 400px;
   height: 100px;
 }
 #about p{
-  font-size: 40px;
+  font-size: 38px;
 }
 #me{
   /* border: 2px solid red; */
   position: relative;
-  left: -380px;
+  left: -400px;
   width: 300px;
 }
 #me p{
-  width: 600px;
+  width: 580px;
   font-size: 22px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(89, 85, 85);
@@ -172,10 +172,11 @@ nav div p{
   font-size: 40px;
 }
 #edu h4{
+  /* border: 2px solid red; */
   position: absolute;
   left: 160px;
   color: rgb(59, 57, 57);
-  width: 600px;
+  width: 300px;
 }
 #edu-det{
   /* border: 2px solid red; */
@@ -184,6 +185,7 @@ nav div p{
   position: relative;
   left: -330px;
   top: 100px;
+  width: 280px;
 }
 #edu-det div{
   /* border: 2px solid; */
@@ -337,8 +339,8 @@ section h1{
   font-size: 50px;
   position:relative;
   top: 1500px;
-  left: 470px;
-  width: 200px;
+  left: 460px;
+  width: 180px;
 }
 #pro div{
   height: 100px;
@@ -437,7 +439,7 @@ section h1{
   position: relative;
   top: 1700px;
   left: 330px;
-  width: 300px;
+  width: 270px;
   font-size: 45px;
 }
 #contact-me{
@@ -460,7 +462,7 @@ section h1{
 #contact-me section{
   /* border: 2px solid sienna; */
   height: 400px;
-  width: 700px;
+  width: 680px;
   padding-left: 60px;
 }
 section img{
